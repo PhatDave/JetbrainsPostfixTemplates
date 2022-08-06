@@ -1,0 +1,12 @@
+# https://github.com/xylo/intellij-postfix-templates#custom-postfix-templates-for-intellij-idea
+
+.p : Print
+	ANY -> console.log($expr$)
+
+.pp : Pretty print
+	ANY -> console.log(f'$expr$ = {$expr$}')
+
+.it : Foreach
+	ANY -> $expr$.forEach((item) => {\
+	$end$\
+});

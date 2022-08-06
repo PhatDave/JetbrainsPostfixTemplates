@@ -10,3 +10,9 @@
 	ANY -> $expr$.forEach((item) => {\
 	$end$\
 });
+
+.keys : Object keys
+	ANY -> Object.keys($expr$);
+
+.values : Object values
+	ANY -> Object.values($expr$);

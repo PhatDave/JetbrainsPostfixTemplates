@@ -1,0 +1,7 @@
+# https://github.com/xylo/intellij-postfix-templates#custom-postfix-templates-for-intellij-idea
+
+.p : Print
+	ANY -> print($expr$)
+
+.pp : Pretty print
+	ANY -> print(f'$expr$ = {$expr$}')

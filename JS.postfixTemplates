@@ -26,3 +26,8 @@
 	ANY -> if ($expr$ !== undefined) {\
 	$end$\
 }\;
+
+.nnu : Not null or undefined
+	ANY -> if ($expr$ !== null && $expr$ !== undefined) {\
+	$end$\
+}\;

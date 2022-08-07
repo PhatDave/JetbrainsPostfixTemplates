@@ -16,3 +16,13 @@
 
 .values : Object values
 	ANY -> Object.values($expr$);
+
+.nn : Not null
+	ANY -> if ($expr$ !== null) {\
+	$end$\
+}\;
+
+.nu : Not undefined
+	ANY -> if ($expr$ !== undefined) {\
+	$end$\
+}\;

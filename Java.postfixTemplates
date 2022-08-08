@@ -1,0 +1,5 @@
+.p : Print
+	ANY -> System.out.println($expr$);
+
+.pp : Pretty print
+	ANY -> Systm.out.println("$expr$ = " + $expr$);

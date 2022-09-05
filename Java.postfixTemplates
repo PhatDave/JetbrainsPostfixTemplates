@@ -2,5 +2,5 @@
 	ANY -> System.out.println($expr$);
 
 .pp : Pretty print
-	ANY -> Sysetm.out.println("$expr$ = " + $expr$);
+	ANY -> System.out.println("$expr$ = " + $expr$);
 
